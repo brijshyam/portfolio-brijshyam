@@ -47,7 +47,7 @@
         &:hover{
             scale: 0.5;
             @include transition-ease;
-            cursor: url('/favicon.png'),auto;
+            cursor: url('/dist/img/favicon.png'),auto;
             text-shadow: -3px 3px 3px #000;
             border-bottom: 2px solid set-text-color($primary-color);
         }

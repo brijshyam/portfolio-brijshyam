@@ -44,7 +44,7 @@
 .home_name-first:hover {
   scale: 0.5;
   transition: all 0.5s ease-in-out;
-  cursor: url("/favicon.png"), auto;
+  cursor: url("/dist/img/favicon.png"), auto;
   text-shadow: -3px 3px 3px #000;
   border-bottom: 2px solid #fff;
 }
