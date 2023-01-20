@@ -1,0 +1,90 @@
+.home{
+
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: 
+   //will later on put linear gradient-- agar jarurat padegi toh.
+    linear-gradient(0deg, black, transparent),
+    url('/dist/img/man-in-crowd.jpg') center top;
+    background-size: cover;
+
+    .logo{
+        width: 15%;
+        height: 10%;
+        position: absolute;
+        left:1rem;
+        top: 1rem;
+        background:url('/dist/img/logo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        @include transition-ease;
+        transform: rotatey(1440deg);
+        
+    }
+    .addressal{
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    &_name{
+        font-size: 4rem;
+        padding-bottom: 1rem;
+        margin-top: 2rem;
+       
+
+        
+    }
+    &_name-first{
+        color: $secondary-color;
+        font-weight: 700;
+        border-bottom: 2px solid set-text-color($primary-color);
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        
+        &:hover{
+            scale: 0.5;
+            @include transition-ease;
+            cursor: url('/favicon.png'),auto;
+            text-shadow: -3px 3px 3px #000;
+            border-bottom: 2px solid set-text-color($primary-color);
+        }
+
+    }
+    &_name-last{
+        font-size: 5rem;
+        margin: .5rem auto auto auto;
+    }
+    h3{
+        font-size: 0.9rem;
+        padding-top: 1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+
+    }
+
+    .social-icons{
+        margin-left:25%;
+        font-size: 1.2rem;
+
+        .fa{
+            &:hover{
+                @include transition-ease;
+                color:$secondary-color;
+                transform: rotateZ(360deg);
+                scale: 0.85;
+            }
+        }
+    }
+
+    footer{
+        transform: rotate(90deg);
+        font-size: 1rem;
+        right: -4rem;
+        bottom: 3rem;
+    }
+
+
+}

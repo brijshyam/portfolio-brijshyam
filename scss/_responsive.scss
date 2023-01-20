@@ -1,0 +1,162 @@
+@include media-md{
+    .menu-button{
+        visibility: hidden;
+        
+    }
+    .nav{
+        visibility: visible;
+        height: 7%;
+        
+        .menu-nav{
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: $primary-color;
+            text-align: right;
+
+
+            &_item{
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &_link{
+                font-size: 1rem;
+                top: -1.2rem;
+                position: relative;
+            }
+
+        }
+    }
+    .home{
+
+        .logo{
+            top: 3.2rem;
+            height: 15%;
+            width: 20%;
+        }
+
+        .social-icons{
+            margin-left: 40%;
+           
+        }
+        footer{
+            transform: rotate(0deg);
+            font-size: 1rem;
+            right: 0;
+            bottom: 1rem;
+        }
+
+
+    }
+
+    .about{
+        &_bio{
+            font-size: 1.3rem;
+        }
+    }
+
+    .skill{
+        &_banner-image{
+            height: 45vh;
+            h1{
+                font-size: 3rem;
+            }
+        }
+        .skills{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .projects{
+        &_banner-image{
+            height: 40vh;
+        }
+
+        &_items{
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+        .text-secondary{
+            font-size: 3rem;
+        }
+    }
+
+    .contact_list{
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+
+}
+
+@include media-lg{
+
+    .nav{
+        height: 7%;
+
+        .menu-nav_link{
+            font-size: 1rem;
+            top: -1.2rem;
+            position: relative;
+        }
+    }
+    .projects{
+        &_items{
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+    }
+
+    .skill{
+        .skills{
+            .skill-header{
+                margin: 2rem auto 2rem auto;
+            }
+            &_technical{
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+
+    .contact{
+        &_list{
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        
+    }
+
+    .contact{
+        .social-icons{
+            font-size: 2rem;
+        }
+    }
+
+
+}
+
+@include media-xl{
+    .projects{
+        &_banner-image{
+            height: 40vh;;
+        }
+    }
+
+    .skill{
+        .skills{
+            grid-template-columns: repeat(4, 1fr);
+
+            &_skill{
+                height: 1rem;
+            }
+        }
+    }
+
+    .projects{
+        &_items{
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+    }
+}
+

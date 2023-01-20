@@ -1,0 +1,207 @@
+.skill{
+
+    &_banner-image{
+        height: 30vh;
+        width: 100%;
+        background: linear-gradient(0deg, rgb(22, 22, 20), transparent),
+        url('/dist/img/kill.jpg');
+        background-size: cover;
+        display: flex;   
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        
+        // for some weird reason this property is not getting applied.
+        .text-secondary{
+            font-size: 2rem;
+            padding-bottom: 2rem;
+            font-weight: 700;
+            text-shadow: 2px 2px lighten($primary-color,50%);
+        }
+    }
+
+    .skills{
+        
+        .skill-header{
+            color: darken(set-text-color($primary-color), 9%);
+            display: flex;
+            align-items: center;
+            margin: 2rem auto 1rem auto;
+            justify-content: center;
+            text-shadow: 2px 3px 4px $secondary-color;
+
+        }
+        &_technical{
+            width:  80vw;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1rem auto 1rem auto;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding-bottom: 2rem;
+            
+
+            &_skill{
+                
+                box-shadow: #000 3px 5px 10px 0px;
+                padding: 0.5rem;
+                margin-left: 1.2rem;
+                border-bottom: 5px solid lighten(rgba($secondary-color,0.9),5%);
+                height: 6rem;
+                width: 5rem;
+                
+                h4{
+                    font-size: 0.75rem;
+                    font-weight: 300;
+                    position: relative;
+                    bottom: -4rem;
+                }
+    
+            }
+    
+            .java{
+                background:url('/dist/img/java.gif');
+                background-repeat: no-repeat;
+                background-position: 50% 20%;
+                background-size: 60px 60px;
+                text-align: center;
+            }
+            .javascript{
+                background:url('/dist/img/javascript.gif');
+                background-repeat: no-repeat;
+                background-position: 50% 20%;
+                background-size: 60px 60px;
+                text-align: center;
+            }
+            .html{
+                background:url('/dist/img/html5.svg');
+                background-repeat: no-repeat;
+                background-position: 50% 20%;
+                background-size: 60px 60px;
+                text-align: center;
+            }
+            .css{
+                background:url('/dist/img/css.svg');
+                background-repeat: no-repeat;
+                background-position: 50% 20%;
+                background-size: 60px 60px;
+                text-align: center;
+            }
+            .scss{
+                background:url('/dist/img/scss.svg');
+                background-repeat: no-repeat;
+                background-position: 50% 20%;
+                background-size: 60px 60px;
+                text-align: center;
+    
+            }
+            .mysql{
+                background:url('/dist/img/mysql.svg');
+                background-repeat: no-repeat;
+                background-position: 50% 20%;
+                background-size: 60px 60px;
+                text-align: center;
+            }
+            .mongodb{
+                background:url('/dist/img/mongodb.svg');
+                background-repeat: no-repeat;
+                background-position: 50% 20%;
+                background-size: 60px 60px;
+                text-align: center;
+    
+            }
+            .react{
+                background:url('/dist/img/react.gif');
+                background-repeat: no-repeat;
+                background-position: 50% 20%;
+                background-size: 60px 60px;
+                text-align: center;
+            }
+            .git{
+                background:url('/dist/img/github.gif');
+                background-repeat: no-repeat;
+                background-position: 50% 20%;
+                background-size: 60px 60px;
+                text-align: center;
+            }
+            
+        }
+
+        //other skill -- may be I can add later on here
+        &_other{
+            width:  80vw;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1rem auto 1rem auto;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            &_skill{
+                
+                box-shadow: #000 3px 5px 10px 0px;
+                padding: 0.5rem;
+                margin-left: 1.2rem;
+                border-bottom: 5px solid lighten(rgba($secondary-color,0.9),5%);
+                height: 6rem;
+                width: 5rem;
+                
+                h4{
+                    font-size: 0.75rem;
+                    font-weight: 300;
+                    position: relative;
+                    bottom: -4rem;
+                }
+    
+            }
+
+            .ps{
+                background:url('/dist/img/photoshop.png');
+                background-repeat: no-repeat;
+                background-position: 50% 20%;
+                background-size: 60px 60px;
+                text-align: center;
+            }
+            .lightroom{
+                background:url('/dist/img/lightroom.png');
+                background-repeat: no-repeat;
+                background-position: 50% 20%;
+                background-size: 60px 60px;
+                text-align: center;
+            }
+            .ppro{
+                background:url('/dist/img/premiere-pro.png');
+                background-repeat: no-repeat;
+                background-position: 50% 20%;
+                background-size: 60px 60px;
+                text-align: center;
+                h4{
+                    font-size: .7rem;
+                    font-weight: 350;
+                }
+            }
+            .figma{
+                background:url('/dist/img/figma.gif');
+                background-repeat: no-repeat;
+                background-position: 50% 20%;
+                background-size: 60px 60px;
+                text-align: center;
+            }
+        }
+    }
+
+
+
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+
+    footer{
+        transform: rotate(90deg)
+        translate(-3rem, -5rem);
+        font-size: 1rem;
+    }
+}
