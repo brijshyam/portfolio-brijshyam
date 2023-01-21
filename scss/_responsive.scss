@@ -86,13 +86,19 @@
     }
 
     .contact_list{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 4fr 2fr 2fr;
         justify-content: center;
     }
 
 }
 
 @include media-lg{
+    .home{
+        .social_icons-wrapper{
+            margin-top: 0.2rem;
+
+        }
+    }
 
     .nav{
         height: 7%;
@@ -132,7 +138,7 @@
 
     .contact{
         &_list{
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 4fr 2fr 2fr;
             
         }
 

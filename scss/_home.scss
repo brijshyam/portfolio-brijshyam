@@ -65,16 +65,20 @@
 
     }
 
-    .social-icons{
-        margin-left:25%;
-        font-size: 1.2rem;
+    .social_icons-wrapper{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
 
-        .fa{
-            &:hover{
-                @include transition-ease;
-                color:$secondary-color;
-                transform: rotateZ(360deg);
-                scale: 0.85;
+        .social_icons{
+            .fa{
+                padding: 0.8rem;
+                &:hover{
+                    @include transition-ease;
+                    color:$secondary-color;
+                    transform: rotateZ(360deg);
+                    scale: 0.75;
+                }
             }
         }
     }
