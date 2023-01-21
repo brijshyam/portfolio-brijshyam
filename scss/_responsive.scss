@@ -51,8 +51,11 @@
     }
 
     .about{
+        &_bio-image{
+            height: 50vh;
+        }
         &_bio{
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
     }
 
@@ -100,10 +103,19 @@
             position: relative;
         }
     }
+
+    .about{
+        &_bio-image{
+            height: 70vh;
+        }
+    }
     .projects{
         &_items{
             grid-template-columns: repeat(3, 1fr);
 
+        }
+        &_banner-image{
+            height: 70vh;
         }
     }
 
@@ -121,6 +133,7 @@
     .contact{
         &_list{
             grid-template-columns: repeat(3, 1fr);
+            
         }
 
         

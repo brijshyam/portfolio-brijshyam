@@ -5,7 +5,7 @@
     &_bio-image{
         height: 50vh;
         width: 100%;
-        background: linear-gradient(0deg, black, #000000a5),
+        background: radial-gradient(circle farthest-side,#00000063, $primary-color),
         url('/dist/img/man-in-crowd.jpg') center top;
         background-size: cover;
         display: flex;   

@@ -201,7 +201,7 @@
 .about_bio-image {
   height: 50vh;
   width: 100%;
-  background: linear-gradient(0deg, black, rgba(0, 0, 0, 0.6470588235)), url("/dist/img/man-in-crowd.jpg") center top;
+  background: radial-gradient(circle farthest-side, rgba(0, 0, 0, 0.3882352941), #03222b), url("/dist/img/man-in-crowd.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -619,8 +619,11 @@
     right: 0;
     bottom: 1rem;
   }
+  .about_bio-image {
+    height: 50vh;
+  }
   .about_bio {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .skill_banner-image {
     height: 45vh;
@@ -654,8 +657,14 @@
     top: -1.2rem;
     position: relative;
   }
+  .about_bio-image {
+    height: 70vh;
+  }
   .projects_items {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .projects_banner-image {
+    height: 70vh;
   }
   .skill .skills .skill-header {
     margin: 2rem auto 2rem auto;
@@ -688,8 +697,13 @@ body {
   background-color: #03222b;
   color: #fff;
   height: 100vh;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
+}
+@font-face {
+  body {
+    font-family: "CustomFont";
+    src: url("/dist/fonts/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoq92nA.woff2") format("woff");
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
