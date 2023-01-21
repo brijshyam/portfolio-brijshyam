@@ -653,9 +653,9 @@
     justify-content: center;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1366px) {
   .home .social_icons-wrapper {
-    margin-top: 0.2rem;
+    margin-top: 4rem;
   }
   .nav {
     height: 7%;
