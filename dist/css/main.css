@@ -449,7 +449,7 @@
 .projects_banner-image {
   height: 40vh;
   width: 100%;
-  background: linear-gradient(0deg, black, transparent), url("/dist/img/man-in-crowd.jpg") center top;
+  background: radial-gradient(circle farthest-side, rgba(0, 0, 0, 0.3882352941), #03222b), url("/dist/img/man-in-crowd.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;

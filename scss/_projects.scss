@@ -4,7 +4,7 @@
     &_banner-image{
         height: 40vh;
         width: 100%;
-        background: linear-gradient(0deg, black, transparent),
+        background: radial-gradient(circle farthest-side,#00000063, $primary-color),
         url('/dist/img/man-in-crowd.jpg') center top;
         background-size: cover;
         display: flex;   
