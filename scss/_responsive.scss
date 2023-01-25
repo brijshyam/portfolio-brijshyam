@@ -74,20 +74,55 @@
     .projects{
         &_banner-image{
             height: 40vh;
+            background-repeat: repeat;
         }
 
         &_items{
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
 
         }
         .text-secondary{
             font-size: 3rem;
+            margin-bottom: 1rem;
         }
     }
 
     .contact_list{
         grid-template-columns: 4fr 2fr 2fr;
         justify-content: center;
+    }
+
+    .footer-base{
+
+        .footer{
+            &_container.forres{
+            
+                grid-template-columns: repeat(2, 1fr);
+                gap: 3rem;
+                justify-content: center;
+                align-items: center;
+
+                .footer_copyright{
+                    position: relative;
+                    display: block;
+                    bottom: 0vh;
+                    
+                }
+            }
+            &_other,&_social{
+
+                margin-left: 40%!important;
+
+                a{
+                    padding: 0.5% !important;
+                }
+            }
+
+            
+        }
+        .copyright{
+            margin-top: 0rem !important;
+        }
     }
 
 }
@@ -116,12 +151,16 @@
         }
     }
     .projects{
-        &_items{
-            grid-template-columns: repeat(3, 1fr);
-
-        }
         &_banner-image{
-            height: 70vh;
+            height: 40vh;
+            width: 100%;
+            background-repeat: repeat;
+            
+            
+            .text-secondary{
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
         }
     }
 

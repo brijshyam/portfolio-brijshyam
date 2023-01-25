@@ -274,7 +274,7 @@
 .skill_banner-image {
   height: 30vh;
   width: 100%;
-  background: linear-gradient(0deg, rgb(22, 22, 20), transparent), url("/dist/img/kill.jpg");
+  background: linear-gradient(0deg, rgb(22, 22, 20), transparent), url("/dist/img/Skills.svg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -453,8 +453,9 @@
 .projects_banner-image {
   height: 40vh;
   width: 100%;
-  background: radial-gradient(circle farthest-side, rgba(0, 0, 0, 0.3882352941), #03222b), url("/dist/img/man-in-crowd.jpg") center top;
-  background-size: cover;
+  background: linear-gradient(49deg, rgba(0, 0, 0, 0), black), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/dist/img/Projects.png") center top;
+  background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -534,7 +535,7 @@
 }
 
 .contact {
-  height: 100%;
+  height: 60%;
   padding-top: 40vh;
   overflow: hidden;
   display: flex;
@@ -641,16 +642,38 @@
   }
   .projects_banner-image {
     height: 40vh;
+    background-repeat: repeat;
   }
   .projects_items {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .projects .text-secondary {
     font-size: 3rem;
+    margin-bottom: 1rem;
   }
   .contact_list {
     grid-template-columns: 4fr 2fr 2fr;
     justify-content: center;
+  }
+  .footer-base .footer_container.forres {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-base .footer_container.forres .footer_copyright {
+    position: relative;
+    display: block;
+    bottom: 0vh;
+  }
+  .footer-base .footer_other, .footer-base .footer_social {
+    margin-left: 40% !important;
+  }
+  .footer-base .footer_other a, .footer-base .footer_social a {
+    padding: 0.5% !important;
+  }
+  .footer-base .copyright {
+    margin-top: 0rem !important;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -668,11 +691,14 @@
   .about_bio-image {
     height: 70vh;
   }
-  .projects_items {
-    grid-template-columns: repeat(3, 1fr);
-  }
   .projects_banner-image {
-    height: 70vh;
+    height: 40vh;
+    width: 100%;
+    background-repeat: repeat;
+  }
+  .projects_banner-image .text-secondary {
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
   .skill .skills .skill-header {
     margin: 2rem auto 2rem auto;
@@ -701,6 +727,131 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+.footer-base {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.849), #03222b), url("/dist/img/keyboard.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-base .footer_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 1rem;
+}
+.footer-base .footer_other, .footer-base .footer_social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 15%;
+  letter-spacing: 2px;
+}
+.footer-base .footer_other h3, .footer-base .footer_social h3 {
+  margin: 1rem 0rem;
+  letter-spacing: 0rem;
+  font-weight: 700;
+  color: #ce4f1d;
+  text-transform: uppercase;
+}
+.footer-base .footer_other a, .footer-base .footer_social a {
+  padding: 2%;
+  display: inline;
+}
+.footer-base .footer_other a:hover, .footer-base .footer_social a:hover {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  color: #ce4f1d;
+  font-weight: 900;
+}
+.footer-base .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+nav .go-back {
+  position: absolute;
+  top: 2rem;
+  padding: 1rem;
+  left: 1rem;
+  background-color: #a13e17;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+}
+nav .go-back:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: #8b3514;
+  color: #bfbfbf;
+}
+
+.coming-soon_banner {
+  position: absolute;
+  background-size: cover;
+  top: 40%;
+  left: 15%;
+  background-repeat: no-repeat;
+}
+.coming-soon_banner h3 {
+  color: #9be3f8;
+  margin: 0.5rem auto;
+}
+.coming-soon_banner span {
+  display: block;
+  margin-bottom: 2rem;
+  color: #3cc8f1;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.coming-soon_banner .typewriter h3 {
+  color: #3cc8f1;
+  overflow: hidden;
+  border-right: 0.15em solid;
+  white-space: nowrap;
+  width: 50%;
+  word-wrap: break-word;
+  margin: 0 0.5rem 0 0;
+  letter-spacing: 2px;
+  -webkit-animation: typing 8s steps(100, end) infinite, blink-caret 0.5s step-end infinite;
+          animation: typing 8s steps(100, end) infinite, blink-caret 0.5s step-end infinite;
+}
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
 body {
   background-color: #03222b;
   color: #fff;

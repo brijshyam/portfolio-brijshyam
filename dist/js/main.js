@@ -26,3 +26,24 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
+window.onscroll = function () {
+    const threshold = 0.5; // 80% of the total height
+    if (window.scrollY >= (document.body.offsetHeight - window.innerHeight + (document.body.offsetHeight * threshold))) {
+        const elements = document.getElementsByClassName("social-icons");
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].style.display = "none";
+            elements[i].classList.add('reachedBottom');
+        }
+    } else {
+        const elements = document.getElementsByClassName("social-icons");
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].style.display = "flex";
+            elements[i].classList.remove('reachedBottom')
+        }
+    }
+}
+
+
+
+/* ====================== Working Landing Page======================= */

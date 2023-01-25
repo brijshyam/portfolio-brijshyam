@@ -1,0 +1,52 @@
+.footer-base{
+
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.849), $primary-color),url('/dist/img/keyboard.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .footer{
+        &_container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        &_other, &_social{
+
+            h3{
+                margin: 1rem 0rem;
+                letter-spacing: 0rem;
+                font-weight: 700;
+                color: $secondary-color;
+                text-transform: uppercase;
+            }
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-left: 15%;
+            letter-spacing: 2px;
+
+            a{
+                padding: 2%;
+                display: inline;
+                &:hover{
+                    @include transition-ease;
+                    cursor: pointer;
+                    color: $secondary-color;
+                    font-weight: 900;
+                    
+                }
+            }
+        }
+
+        
+    }
+    .copyright{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: 2rem;
+    }
+}
