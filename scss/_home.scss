@@ -8,8 +8,9 @@
     background: 
    //will later on put linear gradient-- agar jarurat padegi toh.
     linear-gradient(0deg, black, transparent),
-    url('/dist/img/man-in-crowd.jpg') center top;
+    url('/dist/img/man-in-crowd.jpg') top ;
     background-size: cover;
+    background-repeat: no-repeat;
 
     .logo{
         width: 15%;

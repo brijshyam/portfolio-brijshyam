@@ -10,8 +10,9 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(0deg, black, transparent), url("/dist/img/man-in-crowd.jpg") center top;
+  background: linear-gradient(0deg, black, transparent), url("/dist/img/man-in-crowd.jpg") top;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .home .logo {
   width: 15%;
@@ -553,7 +554,7 @@
   display: grid;
   grid-template-columns: 1fr;
   font-size: 0.8rem;
-  gap: 2rem;
+  gap: 1rem;
   font-size: 1.2rem;
 }
 .contact_list .text-secondary {
