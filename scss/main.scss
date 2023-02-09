@@ -8,14 +8,15 @@
 @import 'responsive';
 @import 'footer';
 @import 'comingsoon';
+@font-face {
+font-family: "CustomFont";
+src: url("/dist/fonts/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoq92nA.woff2") format("woff"),
+}
 body{
     background-color: $primary-color;
     color: set-text-color($primary-color);
     height: 100vh;
-    @font-face {
-        font-family: "CustomFont";
-        src: url("/dist/fonts/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoq92nA.woff2") format("woff"),
-        }
+    font-family: "CustomFont";
     line-height: 1;
 }
 

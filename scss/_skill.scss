@@ -42,23 +42,65 @@
             padding-bottom: 2rem;
             
 
-            &_skill{
-                
+            &_skill {
                 box-shadow: #000 3px 5px 10px 0px;
                 padding: 0.5rem;
                 margin-left: 1.2rem;
-                border-bottom: 5px solid lighten(rgba($secondary-color,0.9),5%);
+                // border: solid lighten(rgba($secondary-color, 0.9), 5%);
+                border: solid darken($color: #ffff, $amount: 50%);
+                border-width: 1px 1px 5px 1px;
+                border-radius: 5px;
                 height: 6rem;
                 width: 5rem;
-                
-                h4{
+                position: relative;
+              }
+              &_skill::before {
+                content: '';
+                position: absolute;
+                height: 0;
+                width: 0;
+                border: 3px solid transparent;
+                right: -0.15rem;
+                top: -0.12rem;
+              }
+              
+              &_skill:hover::before {
+                height: 6rem;
+                width: 5rem;
+                border: solid rgba($secondary-color, 0.9);
+                border-width: 3px 3px 3px 3px ;
+                border-radius: 5px;
+                border-right: none;
+                border-bottom: none;
+                transition: height 0.2s linear, width 0.2s linear 0.2s;
+              }
+              &_skill::after {
+                content: '';
+                position: absolute;
+                height: 0;
+                width: 0;
+                border: 3px solid transparent;
+                right: -0.15rem;
+                top: -0.12rem;
+              }
+              
+              &_skill:hover::after {
+                height: 6rem;
+                width: 5rem;
+                border:solid darken($color: $secondary, $amount: 50%);
+                border-width:  3px 3px 3px 3px ;
+                border-radius: 5px;
+                border-left: none;
+                border-top: none;
+                transition: height 0.2s linear, width 0.2s linear 0.2s;
+              }
+              h4{
                     font-size: 0.75rem;
                     font-weight: 300;
                     position: relative;
                     bottom: -4rem;
                 }
-    
-            }
+            
     
             .java{
                 background:url('/dist/img/java.gif');
@@ -143,7 +185,9 @@
                 box-shadow: #000 3px 5px 10px 0px;
                 padding: 0.5rem;
                 margin-left: 1.2rem;
-                border-bottom: 5px solid lighten(rgba($secondary-color,0.9),5%);
+                border:solid lighten(rgba($secondary-color,0.9),5%);
+                border-width:1px 1px 5px 1px ;
+                border-radius: 5px;
                 height: 6rem;
                 width: 5rem;
                 

@@ -47,11 +47,13 @@
             background: lighten($primary-color,10%);
             padding: 0.5rem;
             border-bottom: 5px solid $secondary-color;
+            border-radius: 5px;
             &:hover{
                 border-bottom: 7px solid $secondary-color;
                 background: lighten($primary-color, 5%);
                 @include transition-ease;
             }
+            
 
             h2,h3{
                 margin: 0.5rem 0;
