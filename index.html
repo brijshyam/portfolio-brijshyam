@@ -1,78 +1,814 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/dist/css/main.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brij - personal portfolio</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet">
+  </head>
 
-        <title>Portfolio -Brij Shyam</title>
-        <link rel="icon" type="image/x-icon" href="/dist/img/favicon.png">
-    </head>
+  <body id="top" class="dark_theme">
 
-    <body>
-        <header>
-            <div class="menu-button">
-                <span class="menu-button_burger"></span>
+    <!-- - #HEADER -->
+    <header class="header" data-header>
+      <div class="container">
+
+        <h1 class="h1 logo">
+          <a href="#"><span>&lt;</span>Brij<span>/></span></a>
+        </h1>
+
+        <div class="navbar-actions">
+
+          <select name="language" id="lang">
+            <option value="en">En</option>
+            <option value="ar">Comming Soon</option>
+          </select>
+
+          <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+            <span class="icon"></span>
+          </button>
+
+        </div>
+
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="#vertical-timeline education" class="navbar-link">Timeline</a>
+            </li>
+
+            <li>
+              <a href="#skills" class="navbar-link">Skills</a>
+            </li>
+
+            <li>
+              <a href="#portfolio" class="navbar-link">Portfolio</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link">Contact</a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+
+    <main>
+      <article class="container">
+        <section class="hero" id="home">
+
+          <figure class="hero-banner" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+            <picture data-aos="zoom-in">
+              <source srcset=" ./assets/images/hero-banner-1.png" media="(min-width: 768px)" data-aos="zoom-in">
+              <source srcset="./assets/images/hero-banner-1.png" media="(min-width: 500px)">
+              <img src="./assets/images/hero-banner-1.png" alt="A man in a blue shirt with a happy expression"
+                class="w-100">
+            </picture>
+          </figure>
+          <!--  Hero Content  -->
+          <div class="hero-content">
+            <h3 class="h3  hero-title section-text" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">
+              <div class="greeting-wrapper">
+                <span class="greeting">Hi,</span>
+                <span class="hi-emoji"> 👋</span>
+                <sapn class="i-am">I am</sapn>
+              </div>
+              <span class="name-wrapper" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">Brij Shyam
+              </span>
+            </h3>
+            <span class="h4 hero-title " data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
+              <p class="typing-text" id="typing-text"></p>
+            </span>
+            <a href="#contact" class="btn btn-primary" data-aos="fade-left" data-aos-duration="1000"
+              data-aos-delay="1500">Get in touch</a>
+          </div>
+
+          <!-- Side Social Icons -->
+          <ul class="hero-social-list" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+
+            <li>
+              <a href="https://www.instagram.com/a1clickswithbrij" class="hero-social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <div class="tooltip">Instagram</div>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.facebook.com/brijshyam.maurya" class="hero-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <div class="tooltip">Facebook</div>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/brij-shyam-maurya" class="hero-social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <div class="tooltip">Linkedin</div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="hero-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+                <div class="tooltip">Twitter</div>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/brijshyam" class="hero-social-link">
+                <ion-icon name="logo-github"></ion-icon>
+                <div class="tooltip">GitHub</div>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://leetcode.com/brijshyam/" class="hero-social-link">
+                <ion-icon name="code-slash-sharp"></ion-icon>
+                <div class="tooltip">LeetCode</div>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:brijshyam51maurya@outlook.com" class="hero-social-link">
+                <ion-icon name="mail-outline"></ion-icon>
+                <div class="tooltip">Email</div>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.yourquote.in/brij-shyam-1mq4/quotes" class="hero-social-link">
+                <ion-icon name="pencil"></ion-icon>
+                <div class="tooltip">YourQuote</div>
+              </a>
+            </li>
+
+          </ul>
+
+          <a href="#stats" class="scroll-down">Scroll</a>
+
+        </section>
+
+        <!-- #ABOUT-->
+
+        <section class="about" id="about">
+
+          <figure class="about-banner" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+            <img src="./assets/images/feeling-proud-about.svg"
+              alt="A man in a alice blue shirt with a thinking expression" class="w-100">
+          </figure>
+
+          <div class="about-content section-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+
+            <p class="section-subtitle">About me</p>
+
+            <h2 class="h3 section-title">Need a Versatile Developer? Here I am.</h2>
+
+            <p class="section-text">
+              I am a B. Tech graduate in Computer Science and Engineering with a passion for photography. I have
+              developed expertise in a range of programming languages and technologies including Java, React JS, HTML,
+              CSS, SCSS, JavaScript, NodeJS, SQL, and NoSQL. With my passion for problem-solving and aptitude for
+              learning new technologies, I am well-equipped to tackle a variety of technical challenges. My aptitude for
+              problem-solving and solid technical foundation allows me to handle difficult tasks with ease.
+            </p>
+            <div class="btn-group">
+              <button class="btn btn-secondary">Hire me</button>
+              <button class="btn btn-primary">Download cv</button>
             </div>
-            <nav class="nav">
-                <ul class="menu-nav">
-                    <li class="menu-nav_item active">
-                        <a href="#" class="menu-nav_link">Home</a>
-                    </li>
-                    <li class="menu-nav_item">
-                        <a href="about.html" class="menu-nav_link">About</a>
-                    </li>
-                    <li class="menu-nav_item">
-                        <a href="skill.html" class="menu-nav_link">Skills</a>
-                    </li>
-                    <li class="menu-nav_item">
-                        <a href="projects.html" class="menu-nav_link">Projects</a>
-                    </li>
-                    <li class="menu-nav_item">
-                        <a href="contact.html" class="menu-nav_link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
 
-        <main>
-            <section class="home">
-                <div class="logo "></div>
-                <h3 class="addressal">Hi, My Name is</h3>
-                <h1 class="home_name">
-                    <span class="home_name-first">Brij Shyam</span>
-                    <span class="home_name-last">Maurya</span>
-                </h1>
-                <h3>
-                    Full-Stack Developer <br>Photographer <br> Learner
-                </h3>
-                <div class="social_icons-wrapper">
-                    <div class="social_icons">
-                        <a href="mailto:brijshyam51maurya@outlook.com" target="_blank" type="email">
-                            <i class="fa fa-envelope-o fa-2x"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/brij-shyam-maurya" target="_blank" title="linkedIn">
-                            <i class="fa fa-linkedin fa-2x"></i>
-                        </a>
-                        <a href="https://github.com/brijshyam" target="_blank" type="github">
-                            <i class="fa fa-github fa-2x"></i>
-                        </a>
-                        <a href="https://www.yourquote.in/brij-shyam-1mq4/quotes" target="_blank" type="YQuote">
-                            <i class="fa fa-quote-left fa-2x"></i>
-                        </a>
-                        <a href="https://leetcode.com/brijshyam/" target="_blank" type="leetcode">
-                            <i class="fa fa-code fa-2x"></i>
-                        </a>
-                    </div>
+          </div>
+        </section>
+        <!-- #VERTICAL TIMELINE -->
+        <section class="section-content" id="vertical-timeline education">
+
+          <p class="section-subtitle">A little more</p>
+
+          <h2 class="h3 section-title">Recent Educaitons and Experiences are:</h2>
+          <ul class="vertical-timeline-container section-text">
+            <li class="timeline-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <div class=" up-arrow climbing-up-arrow-wrapper ">
+                <ion-icon name='arrow-up-circle-outline'></ion-icon>
+                <div class="tooltip" id="progressing">Progressing...</div>
+              </div>
+              <h2>Newton School</h2>
+              <h4>2022-current</h4>
+              <h6 class="course-tag">MS (Computer Science)</h6>
+              <p>
+                Currently persuing MS in computer science from Newton School which is associated with the MIA- Digital
+                University in Spain. <br>
+                Skills and Tech Stacks that currently I am learning here are:
+              <ul class="sublisting-container">
+                <li class="sublist-item">Java</li>
+                <li class="sublist-item">Data Structure and Algorithm</li>
+                <li class="sublist-item">JavaScript</li>
+                <li class="sublist-item">React</li>
+                <li class="sublist-item">NodeJS</li>
+
+              </ul>
+              </p>
+              <span>4</span>
+            </li>
+
+            <li class="timeline-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+              <h2>Vijay Studio Pvt. Ltd.</h2>
+              <h4>2020-2021</h4>
+              <h6 class="course-tag">Profession Photographer</h6>
+              <p>
+                Worked as a Photographer in the aforementioned company for a period of more than 7 month. There I was
+                assigned with multiple responsibilities. Currently having more than 2.5 years of experience in the
+                industry of Professional Photograph
+
+              </p>
+              <span>3</span>
+            </li>
+            <li class="timeline-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+              <h2>University of Lucknow</h2>
+              <h4>2017 - 2021</h4>
+              <h6 class="course-tag">B.Tech - Computer Science & Engineering</h6>
+              <p>
+                I did my 4 years of graduation from University of Lucknow with Computer Science as major. During this
+                course I served my facilty as student Coordinator of CSI-FoET Chapter. Which made me learn so many thing
+                as a team leader.
+
+              </p>
+              <span>2</span>
+            </li>
+            <li class="timeline-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+              <h2>MRES(CBSE) & TCS(CBSE) -Varanasi</h2>
+              <h4>2012 - 2016</h4>
+              <h6 class="course-tag">Secondary and Higher Secondary Schooling</h6>
+              <p>
+                I completed my secondary and higher secondary schooling from Varanasi with grade A.
+              </p>
+              <span>1</span>
+            </li>
+
+          </ul>
+        </section>
+
+        <div class="section-text dotted-horizontal"></div>
+
+        <!-- - #SKILLS -->
+        <section class="skills" id="skills">
+
+          <div class="skills-content section-content" data-skills-box data-aos="zoom-in" data-aos-duration="1000"
+            data-aos-delay="300">
+
+            <p class="section-subtitle">My skills</p>
+
+            <h2 class="h3 section-title">What My Programming Skills Included?</h2>
+
+            <p class="section-text">
+              I develop simple, intuitive and responsive user interface along with backend functionality that helps
+              users get things done with less
+              effort and time with those technologies.
+            </p>
+
+            <div class="skills-toggle" data-toggle-box>
+              <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+              <button class="toggle-btn" data-toggle-btn>Tools</button>
+            </div>
+
+          </div>
+
+          <div class="skills-box">
+
+            <ul class="skills-list">
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Java</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/java.png" alt="HTML5 logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">HTML5</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/html5.png" alt="HTML5 logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">CSS3</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/css3.png" alt="CSS3 logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">JavaScript</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/javascript.png" alt="JavaScript logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">TypeScript</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/typescript.png" alt="TypeScript logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Bootstrap</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">React</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/react.png" alt="React logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Vue</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/vue.png" alt="Vue logo">
+                  </div>
+                </div>
+              </li>
+
+              <!-- <li>
+                <div class="skill-card">
+                  <div class="tooltip">Firebase</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/firebase.png" alt="Firebase logo">
+                  </div>
+                </div>
+              </li> -->
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">SASS</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/sass.png" alt="SASS logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">MongoDB</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/mongodb.svg" alt="SASS logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Node Js</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/nodejs.png" alt="SASS logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Node Js</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/mysql.svg" alt="SASS logo">
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+            <!-- TOOLS LIST -->
+            <ul class="tools-list">
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Webpack</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/webpack.png" alt="Webpack logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Git</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/git.png" alt="Git logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Npm</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/npm.png" alt="Npm logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Command Line</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/command.png" alt="Command Line logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">VS Code</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/vs-code.png" alt="VS Code logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Slack</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/slack.png" alt="Slack logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Photoshop</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/photoshop.png" alt="Photoshop logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Adobe XD</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/adobe-xd.png" alt="Adobe XD logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Figma</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/figma.gif" alt="Figma logo">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Premiere Pro</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/" alt="Priemere Pro logo">
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </section>
+
+
+        <!-- 
+        - #PROJECTS
+      -->
+
+        <section class="project" id="portfolio">
+
+          <ul class="project-list">
+
+            <li data-skills-box data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="00">
+              <div class="project-content section-content">
+
+                <p class="section-subtitle">My Works</p>
+                <h2 class="h3 section-title">See My Awsome Works</h2>
+
+                <p class="section-text">
+                  During my learning journey of programming and coding I have worked on multiple projects. Some of them
+                  I have deployed to show case my work. which is listed down below here.
+                </p>
+
+              </div>
+            </li>
+
+            <li data-skills-box data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+              <a href="#" class="project-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/project-1.jpg" class="w-100" alt="A macintosh on a yellow background.">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
+
+                  <time class="publish-date" datetime="2022-04">April 2022</time>
                 </div>
 
-                <footer>&copy brijshyam 2023</footer>
-            </section>
-        </main>
-        <link rel="stylesheet" href="/dist/fonts/css/font-awesome.min.css">
-        <script src="./dist/js/main.js"></script>
-    </body>
+              </a>
+            </li>
+
+            <li data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
+              <a href="#" class="project-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/project-2.png" class="w-100"
+                    alt="On a Blue background, a Wacom and a mouse.">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
+
+                  <time class="publish-date" datetime="2022-04">April 2022</time>
+                </div>
+
+              </a>
+            </li>
+
+            <li data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
+              <a href="#" class="project-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/Projects.png" class="w-100"
+                    alt="A Cassette tape on a mellow apricot background.">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
+
+                  <time class="publish-date" datetime="2022-04">April 2022</time>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <button class="load-more" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">Load more
+                work</button>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+
+
+        <!-- 
+        - #CONTACT
+      -->
+
+        <section class="contact" id="contact" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200">
+
+          <div class="contact-content section-content">
+
+            <p class="section-subtitle">Contact</p>
+
+            <h2 class="h3 section-title">Have You Got Any Idea to Discuss? Please Drop a Message</h2>
+
+            <p class="section-text">
+              Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
+            </p>
+
+            <ul class="contact-list">
+
+              <li class="contact-list-item">
+
+                <div class="contact-item-icon">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Address:</h3>
+
+                  <address class="contact-info">
+                    Varanasi, UP- 221010
+                  </address>
+                </div>
+
+              </li>
+
+              <li class="contact-list-item">
+
+                <div class="contact-item-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Phone:</h3>
+
+                  <a href="tel:919648244670" class="contact-info">(+91)-9648244670</a>
+
+                </div>
+
+              </li>
+
+              <li class="contact-list-item">
+
+                <div class="contact-item-icon">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Email:</h3>
+                  <a href="mailto:brijshyam51maurya@outlook.com" class="contact-info">brijshyam51maurya@outlook.com</a>
+                </div>
+
+              </li>
+
+              <li>
+                <ul class="contac-social-list">
+
+                  <li data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500">
+                    <a href="https://www.linkedin.com/in/brij-shyam-maurya" class="contact-social-link">
+                      <div class="tooltip">Linkedin</div>
+
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
+                    <a href="https://www.instagram.com/a1clickswithbrij" class="contact-social-link">
+                      <div class="tooltip">Instagram</div>
+
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li data-aos="fade-right" data-aos-duration="2000" data-aos-delay="100">
+                    <a href="wa.me/919648244670" class="contact-social-link">
+                      <div class="tooltip">WhatsApp</div>
+
+                      <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <form action="" class="contact-form" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+            <div class="form-wrapper">
+              <label for="name" class="form-label">Name</label>
+              <div class="input-wrapper">
+                <input type="text" name="name" id="name" required placeholder="e.g Brij Shyam" class="input-field">
+                <ion-icon name="person-circle"></ion-icon>
+              </div>
+            </div>
+
+            <div class="form-wrapper">
+              <label for="email" class="form-label">Email</label>
+              <div class="input-wrapper">
+                <input type="email" name="email" id="email" required placeholder="e.g brij@mail.com"
+                  class="input-field">
+                <ion-icon name="mail"></ion-icon>
+              </div>
+            </div>
+
+            <div class="form-wrapper">
+              <label for="phone" class="form-label">Phone</label>
+              <div class="input-wrapper">
+                <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+                <ion-icon name="call"></ion-icon>
+              </div>
+            </div>
+
+            <div class="form-wrapper">
+              <label for="message" class="form-label">Message</label>
+              <div class="input-wrapper">
+                <textarea name="message" id="message" required placeholder="Write message..."
+                  class="input-field"></textarea>
+                <ion-icon name="chatbubbles"></ion-icon>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <!-- - #FOOTER -->
+    <footer class="footer" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
+      <div class="container">
+
+        <p class="h1 logo">
+          <a href="#">
+            <span>&lt;</span> Brij<span>/></span>
+          </a>
+        </p>
+
+        <p class="copyright">
+          &copy; 2023 <a href="#">brijshyam</a>. All rights reserved
+        </p>
+
+      </div>
+    </footer>
+
+
+
+
+
+    <!-- - #GO TO TOP -->
+
+    <a href="#top" class="go-top" data-go-top title="Go to Top">
+      <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+
+
+
+    <!--- Script CDN links -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- - custom js link-->
+    <script src="./assets/js/script.js"></script>
+    <script defer src="./assets/js/animation.js"></script>
+    <script>
+      AOS.init({
+        offset: 100,
+        duration: 1000
+      })
+
+    </script>
+
+
+  </body>
 
 </html>
