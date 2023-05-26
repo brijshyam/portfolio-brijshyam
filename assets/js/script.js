@@ -1,5 +1,4 @@
 'use strict';
-
 /**
  * element toggle function
  */
@@ -58,10 +57,10 @@ const skillsBox = document.querySelector("[data-skills-box]");
 
 for (let i = 0; i < toggleBtns.length; i++) {
   toggleBtns[i].addEventListener("click", function () {
-
     elemToggleFunc(toggleBtnBox);
     for (let i = 0; i < toggleBtns.length; i++) { elemToggleFunc(toggleBtns[i]); }
     elemToggleFunc(skillsBox);
+    console.log('i am being');
 
   });
 }
@@ -105,3 +104,19 @@ if (localStorage.getItem("theme") === "light_theme") {
   document.body.classList.remove("light_theme");
   document.body.classList.add("dark_theme");
 }
+
+const form = document.getElementById('form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target)
+  const data = [...formData.entries()];
+  const dataObj = {
+    from_name: data[0][1],
+    email_id: data[1][1],
+    phone_no: data[2][1],
+    message: data[3][1]
+  }
+  emailjs.send('service_7miqyun', 'template_90uouai', dataObj).then((res) => {
+    alert('Details sent Successfully!!!, Brij will revert soon 😊');
+  })
+})

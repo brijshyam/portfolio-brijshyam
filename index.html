@@ -14,6 +14,13 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
       rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("w4IXFO1oe-g1UGRJH");
+      })();
+    </script>
   </head>
 
   <body id="top" class="dark_theme">
@@ -197,8 +204,10 @@
               problem-solving and solid technical foundation allows me to handle difficult tasks with ease.
             </p>
             <div class="btn-group">
-              <button class="btn btn-secondary">Hire me</button>
-              <button class="btn btn-primary">Download cv</button>
+              <a href="#contact"><button class="btn btn-secondary">Hire me</button></a>
+              <form action="./assets/MyResume.pdf" method="get" target="_blank">
+                <button class="btn btn-primary" data-download-cv>Download CV</button>
+              </form>
             </div>
 
           </div>
@@ -291,7 +300,6 @@
 
             <div class="skills-toggle" data-toggle-box>
               <button class="toggle-btn active" data-toggle-btn>Skills</button>
-
               <button class="toggle-btn" data-toggle-btn>Tools</button>
             </div>
 
@@ -563,52 +571,40 @@
             </li>
 
             <li data-skills-box data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-              <a href="#" class="project-card">
-
+              <a href="https://github.com/brijshyam/Myntra---What-Are-Components-ES6-Tooling-Create-react-app-Exploring-React-JS---xbze075se5nz"
+                class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-1.jpg" class="w-100" alt="A macintosh on a yellow background.">
+                  <img src="./assets/images/project-1.png" class="w-100" alt="Myntra Website clone Image">
                 </figure>
-
                 <div class="card-content">
-                  <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
-
-                  <time class="publish-date" datetime="2022-04">April 2022</time>
+                  <h3 class="h4 card-title">Myntra Clone</h3>
+                  <time class="publish-date" datetime="2022-04">Apr-May 2022</time>
                 </div>
-
               </a>
             </li>
 
             <li data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
-              <a href="#" class="project-card">
-
+              <a href="https://codebot-beta.vercel.app/" class="project-card">
                 <figure class="card-banner">
                   <img src="./assets/images/project-2.png" class="w-100"
-                    alt="On a Blue background, a Wacom and a mouse.">
+                    alt="A test promt screen image to show up project UI">
                 </figure>
-
                 <div class="card-content">
-                  <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
-
-                  <time class="publish-date" datetime="2022-04">April 2022</time>
+                  <h3 class="h4 card-title">CodeBot-Sassy</h3>
+                  <time class="publish-date" datetime="2022-04">December 2022</time>
                 </div>
-
               </a>
             </li>
 
             <li data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
-              <a href="#" class="project-card">
-
+              <a href="github.com/brijshyam" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/Projects.png" class="w-100"
-                    alt="A Cassette tape on a mellow apricot background.">
+                  <img src="./assets/images/Projects.png" class="w-100" alt="An Image to show up man working on a desk">
                 </figure>
-
                 <div class="card-content">
-                  <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
-
-                  <time class="publish-date" datetime="2022-04">April 2022</time>
+                  <h3 class="h4 card-title">Employee Management</h3>
+                  <time class="publish-date" datetime="2022-04">Oct-Nov 2022</time>
                 </div>
-
               </a>
             </li>
 
@@ -721,7 +717,8 @@
 
           </div>
 
-          <form action="" class="contact-form" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+          <form id="form" action="" class="contact-form" data-aos="fade-up" data-aos-duration="2000"
+            data-aos-delay="300">
             <div class="form-wrapper">
               <label for="name" class="form-label">Name</label>
               <div class="input-wrapper">
