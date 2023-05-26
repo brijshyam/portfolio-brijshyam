@@ -116,6 +116,7 @@ form.addEventListener('submit', (e) => {
     phone_no: data[2][1],
     message: data[3][1]
   }
+  form.reset();
   emailjs.send('service_7miqyun', 'template_90uouai', dataObj).then((res) => {
     alert('Details sent Successfully!!!, Brij will revert soon 😊');
   })
