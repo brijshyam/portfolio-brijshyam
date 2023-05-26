@@ -106,6 +106,7 @@ if (localStorage.getItem("theme") === "light_theme") {
 }
 
 const form = document.getElementById('form');
+// const submitBtn = document.getElementById('submit-btn');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const formData = new FormData(e.target)
@@ -120,4 +121,5 @@ form.addEventListener('submit', (e) => {
   emailjs.send('service_7miqyun', 'template_90uouai', dataObj).then((res) => {
     alert('Details sent Successfully!!!, Brij will revert soon 😊');
   })
+  console.log(dataObj);
 })
