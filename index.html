@@ -55,27 +55,27 @@
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
 
-            <li>
+            <li data-navbar-item>
               <a href="#home" class="navbar-link">Home</a>
             </li>
 
-            <li>
+            <li data-navbar-item>
               <a href="#about" class="navbar-link">About</a>
             </li>
 
-            <li>
+            <li data-navbar-item>
               <a href="#vertical-timeline education" class="navbar-link">Timeline</a>
             </li>
 
-            <li>
+            <li data-navbar-item>
               <a href="#skills" class="navbar-link">Skills</a>
             </li>
 
-            <li>
+            <li data-navbar-item>
               <a href="#portfolio" class="navbar-link">Portfolio</a>
             </li>
 
-            <li>
+            <li data-navbar-item>
               <a href="#contact" class="navbar-link">Contact</a>
             </li>
 
@@ -285,8 +285,7 @@
         <!-- - #SKILLS -->
         <section class="skills" id="skills">
 
-          <div class="skills-content section-content" data-skills-box data-aos="zoom-in" data-aos-duration="1000"
-            data-aos-delay="300">
+          <div class="skills-content section-content" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
 
             <p class="section-subtitle">My skills</p>
 
@@ -305,8 +304,9 @@
 
           </div>
 
-          <div class="skills-box">
+          <div class="skills-box" data-skills-box>
 
+            <!-- SKILLS LIST -->
             <ul class="skills-list">
 
               <li>
@@ -543,20 +543,18 @@
               </li>
 
             </ul>
+
           </div>
 
         </section>
 
 
-        <!-- 
-        - #PROJECTS
-      -->
+        <!--  #PROJECTS --->
 
         <section class="project" id="portfolio">
 
-          <ul class="project-list">
-
-            <li data-skills-box data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="00">
+          <div class="project-desc-wrapper">
+            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="00">
               <div class="project-content section-content">
 
                 <p class="section-subtitle">My Works</p>
@@ -568,13 +566,16 @@
                 </p>
 
               </div>
-            </li>
+            </div>
+            <div class="desc-image"></div>
+          </div>
+          <ul class="project-list">
 
-            <li data-skills-box data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+            <li data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
               <a href="https://github.com/brijshyam/Myntra---What-Are-Components-ES6-Tooling-Create-react-app-Exploring-React-JS---xbze075se5nz"
-                class="project-card">
+                class="project-card" title="Click to Preview">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-1.png" class="w-100" alt="Myntra Website clone Image">
+                  <img src="./assets/images/project-myntra.png" class="w-100" alt="Myntra Website clone Image">
                 </figure>
                 <div class="card-content">
                   <h3 class="h4 card-title">Myntra Clone</h3>
@@ -584,26 +585,51 @@
             </li>
 
             <li data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
-              <a href="https://codebot-beta.vercel.app/" class="project-card">
+              <a href="https://codebot-beta.vercel.app/" class="project-card" title="Click to Preview">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-2.png" class="w-100"
+                  <img src="./assets/images/codebot-sassy.jpeg" class="w-100"
                     alt="A test promt screen image to show up project UI">
                 </figure>
                 <div class="card-content">
                   <h3 class="h4 card-title">CodeBot-Sassy</h3>
-                  <time class="publish-date" datetime="2022-04">December 2022</time>
+                  <time class="publish-date" datetime="2022-12">December 2022</time>
                 </div>
               </a>
             </li>
 
             <li data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
-              <a href="github.com/brijshyam" class="project-card">
+              <a href="github.com/brijshyam" class="project-card" title="Click to Preview">
                 <figure class="card-banner">
                   <img src="./assets/images/Projects.png" class="w-100" alt="An Image to show up man working on a desk">
                 </figure>
                 <div class="card-content">
                   <h3 class="h4 card-title">Employee Management</h3>
-                  <time class="publish-date" datetime="2022-04">Oct-Nov 2022</time>
+                  <time class="publish-date" datetime="2022-10">Oct-Nov 2022</time>
+                </div>
+              </a>
+            </li>
+
+            <li data-aos="flip-right" data-aos-duration="1000" data-aos-delay="600">
+              <a href="github.com/brijshyam" class="project-card" title="Click to Preview">
+                <figure class="card-banner">
+                  <img src="./assets/images/photography-portfolio.jpeg" class="w-100"
+                    alt="An Image to show up man working on a desk">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h4 card-title">Photography Portfolio</h3>
+                  <time class="publish-date" datetime="2023-03">Feb-Mar 2023</time>
+                </div>
+              </a>
+            </li>
+
+            <li data-aos="flip-right" data-aos-duration="1000" data-aos-delay="600">
+              <a href="https://brijshyam.netlify.app/" class="project-card" title="Click to Preview">
+                <figure class="card-banner">
+                  <img src="./assets/images/portfolio.jpeg" class="w-100" alt="An Image to show up man with goggles">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h4 card-title">Self Portfolio</h3>
+                  <time class="publish-date" datetime="2023-02">Jan-Feb 2023</time>
                 </div>
               </a>
             </li>
@@ -612,7 +638,6 @@
               <button class="load-more" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">Load more
                 work</button>
             </li>
-
           </ul>
 
         </section>
@@ -751,18 +776,18 @@
     </main>
 
     <!-- - #FOOTER -->
-    <footer class="footer" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
-      <div class="container">
+    <footer class="footer" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300" data-offset="0" <div
+      class="container">
 
-        <p class="h1 logo">
-          <a href="#">
-            <span>&lt;</span> Brij<span>/></span>
-          </a>
-        </p>
+      <p class="h1 logo">
+        <a href="#">
+          <span>&lt;</span> Brij<span>/></span>
+        </a>
+      </p>
 
-        <p class="copyright">
-          &copy; 2023 <a href="#">brijshyam</a>. All rights reserved
-        </p>
+      <p class="copyright">
+        &copy; 2023 <a href="#">brijshyam</a>. All rights reserved
+      </p>
 
       </div>
     </footer>
