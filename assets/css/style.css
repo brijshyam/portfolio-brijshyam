@@ -523,9 +523,49 @@ main {
   margin-top: -9rem;
 }
 
-:is(.hero-social-list, .scroll-down) {
-  display: none;
+:is(.scroll-down) {
+  display: block;
 }
+
+.hero-social-list {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.hero-social-link {
+  color: var(--color-secondary);
+  padding: 5px;
+  margin-block: 5px;
+  padding: 5px;
+  font-size: 18px;
+  transition: var(--transition-1);
+
+}
+
+.scroll-down {
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+  color: var(--color-secondary);
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  transform-origin: top right;
+}
+
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -50px;
+  width: 30px;
+  height: 2px;
+  background: var(--color-secondary);
+}
+
 
 .hero-content {
   margin-top: 0rem;
@@ -591,7 +631,10 @@ main {
 
 
 .hero-title {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   width: 300px;
   font-size: var(--fs-4);
@@ -602,13 +645,47 @@ main {
   margin-inline: auto;
 }
 
-.typing-text {
-  display: block;
-  height: 2rem;
-  margin-top: -2rem;
-  font-size: var(--fs-5);
-  color: var(--scarlet);
+.typing-container {
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin: -2rem 0 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
 }
+
+#feature-text {
+  margin-left: 8px;
+}
+
+.input-cursor {
+  display: inline-block;
+  width: 2px;
+  background-color: white;
+  height: 1rem;
+  margin-left: 8px;
+  animation: blink 0.6s linear infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 
 
 

@@ -21,6 +21,14 @@
         emailjs.init("w4IXFO1oe-g1UGRJH");
       })();
     </script>
+    <meta name="description"
+      content="I am Brij Shyam, a full stack developer with expertise in React, Redux, Node.js, and various web technologies. I specialize in creating responsive and optimized webpages. With a background in Computer Science and Engineering, I bring strong technical skills to deliver high-quality solutions. Additionally, I have over 2.5 years of experience as a photographer, proficient in tools like Photoshop, Lightroom, and Premiere Pro. Explore my portfolio to see my work and contact me for collaborations and projects.">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://brijshyam.tech/" />
+    <meta property="og:site_name" content="Brij's Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Brij Shyam, Full Stack Developer & Photographer" />
+
   </head>
 
   <body id="top" class="dark_theme">
@@ -85,34 +93,39 @@
       <article class="container">
         <section class="hero" id="home">
 
-          <figure class="hero-banner" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+          <figure class="hero-banner" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
             <picture data-aos="zoom-in">
               <source srcset=" ./assets/images/hero-banner-1.png" media="(min-width: 768px)" data-aos="zoom-in">
               <source srcset="./assets/images/hero-banner-1.png" media="(min-width: 500px)">
-              <img src="./assets/images/hero-banner-1.png" alt="A man in a blue shirt with a happy expression"
-                class="w-100">
+              <img src="./assets/images/hero-banner-1.png"
+                alt="A man with goggles in a white shirt with a happy expression" class="w-100">
             </picture>
           </figure>
           <!--  Hero Content  -->
           <div class="hero-content">
-            <h3 class="h3  hero-title section-text" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">
+            <h3 class="h3  hero-title section-text" data-aos="fade-left" data-aos-duration="300" data-aos-delay="100">
               <div class="greeting-wrapper">
                 <span class="greeting">Hi,</span>
                 <span class="hi-emoji"> 👋</span>
                 <sapn class="i-am">I am</sapn>
               </div>
-              <span class="name-wrapper" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">Brij Shyam
+              <span class="name-wrapper" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500">Brij Shyam
               </span>
             </h3>
-            <span class="h4 hero-title " data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
-              <p class="typing-text" id="typing-text"></p>
-            </span>
+            <!-- =====Adding typing text==== -->
+            <div class="typing-container" data-aos="fade-left" data-aos-duration="500" data-aos-delay="700">
+              <!-- <span id="sentence" class="sentence">I am </span> -->
+              <span id="feature-text"></span>
+              <span class="input-cursor"></span>
+            </div>
+            <!-- =====Adding typing text==== -->
             <a href="#contact" class="btn btn-primary" data-aos="fade-left" data-aos-duration="1000"
-              data-aos-delay="1500">Get in touch</a>
+              data-aos-delay="1000">Get in touch</a>
           </div>
 
           <!-- Side Social Icons -->
-          <ul class="hero-social-list" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+          <ul class="hero-social-list" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1000"
+            data-aos-offset="0">
 
             <li>
               <a href="https://www.instagram.com/a1clickswithbrij" class="hero-social-link">
@@ -172,7 +185,7 @@
 
           </ul>
 
-          <a href="#stats" class="scroll-down">Scroll</a>
+          <a href="#" class="scroll-down">Scroll</a>
 
         </section>
 

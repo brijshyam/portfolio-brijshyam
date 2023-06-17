@@ -27,6 +27,9 @@ window.addEventListener("scroll", function () {
 
 });
 
+// const socials = document.querySelector('.hero-social-list');
+
+
 
 
 /**
