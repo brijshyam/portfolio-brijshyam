@@ -2,6 +2,7 @@
 
 const carouselText = [
     { text: "A Full Stack Developer 👨‍💻", color: "#E38445" },
+    { text: "MERN Stack and Tools Expert 👨‍💻", color: "#f7a168" },
     { text: "A Web Designer 👨‍🎨", color: "#E38495" },
     { text: "An AI Enthusiast 🤖", color: "orange" },
     { text: "A Photographer 📸", color: "yellow" },
